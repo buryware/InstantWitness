@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "342939799152",
+    "firebase_url": "https://instantwitness2.firebaseio.com",
+    "project_id": "instantwitness2",
+    "storage_bucket": "instantwitness2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:342939799152:android:3969a91bc81e3a16",
+        "android_client_info": {
+          "package_name": "com.buryware.firebase.instantwitness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "342939799152-pufg5fvtm5rapn4b70ie6ploh9j3pmbe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.buryware.firebase.instantwitness",
+            "certificate_hash": "c6fa2069face765116fc5a73ad4268ff24b426bb"
+          }
+        },
+        {
+          "client_id": "342939799152-fi4p00a2sllrr0f96jkpao7av60neo07.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "342939799152-fi4p00a2sllrr0f96jkpao7av60neo07.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwqKp_vea3YKMoCGKd16l_TVG3th6Z7J4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "342939799152-fi4p00a2sllrr0f96jkpao7av60neo07.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

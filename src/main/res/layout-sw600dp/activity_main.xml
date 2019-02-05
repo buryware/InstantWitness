@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:context="com.buryware.firebase.instantwitness.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:alpha="1.0"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="430dp"
+            android:layout_above="@+id/linearLayout"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/messageRecyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="424dp"
+                android:layout_above="@+id/container"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:tooltipText="Select which message to respond to here.  \nThis will update the map, \nto selected message.  \n\nRESCUE will use the selected message." />
+
+            <FrameLayout
+                android:id="@+id/fragmentContainer"
+                android:layout_width="265dp"
+                android:layout_height="420dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="0.1"
+                android:background="#000"
+                android:tooltipText="Video and audio streaming is active."
+                android:visibility="visible"
+                ads:layout_constraintEnd_toEndOf="parent"
+                ads:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="15dp" />
+
+        </LinearLayout>
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="543dp"
+            android:layout_above="@+id/map"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:tooltipText="The current location, plus any other \nInstant Witness sessions active. \ncloser then 1000 ft."
+            map:cameraZoom="14"
+            tools:context=".InstantWitnessActivity" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_above="@+id/linearLayout"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/a911Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/helpcolorbutton"
+                android:tooltipText="This will call 911. \nThe real 911.\n Only use in an emergency!!"
+                android:text="@string/_911"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/RescueButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/rescuecolorbutton"
+                android:tooltipText="This will start a RESCUE session.  \nCan only start one RESCUE at a time. \nDisabled if a HELP active."
+                android:text="@string/rescue"
+                android:textColor="@android:color/white"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/HelpButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/helpcolorbutton"
+                android:tooltipText="This will start a HELP session.  \nCan only start one HELP at a time. \nDisabled if a RESCUE active."
+                android:text="@string/help"
+                android:textColor="@android:color/white"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/ResetButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/resetcolorbutton"
+                android:tooltipText="This will stop a HELP/REUE session.  \nTurn off streaming and audio sounds."
+                android:text="@string/reset"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/SoundButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/resetcolorbutton"
+                android:tooltipText="This will stop the audio, with the right pincode."
+                android:text="@string/sound"
+                android:textColor="@android:color/white"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.DeviceDefault.ProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="114dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="60dp"
+        android:indeterminateDrawable="@drawable/my_progress_indeterminate"
+        android:tooltipText="Video and audio streaming is active."
+        android:theme="@style/Progressbar"
+        android:visibility="invisible"
+        ads:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

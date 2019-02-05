@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Instant Witness</string>
+    <string name="welcome_msg">Welcome!</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="contacts_permission_rationale">Access to account information is required to sign in.</string>
+    <string name="invite_menu_label">Invite</string>
+    <string name="invitation_message">Please join me for a friendly chat</string>
+    <string name="invitation_cta">Call to action</string>
+    <string name="invitation_title">Friendly Chat Invite</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="fresh_config">Fresh Config</string>
+    <string name="cause_crash">Cause Crash</string>
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="rescue">RESCUE</string>
+    <string name="help">HELP</string>
+    <string name="_911">911</string>
+    <string name="reset">STOP</string>
+    <string name="sound">SOUND</string>
+
+    <string name="record">Record</string>
+    <string name="stop">Stop</string>
+    <string name="description_info">Info</string>
+    <string name="permission_request">This sample needs permission for camera and audio recording.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="camera_front">Set the Camera to Front</string>
+    <string name="camera_back">Set the Camera to Back</string>
+    <string name="camera_flashon">Set the Camera Flash On</string>
+    <string name="camera_flashoff">Set the Camera Flash Off</string>
+    <string name="about">About Instant Witness</string>
+
+    <string name="help_msg">Please HELP ME!</string>
+    <string name="rescue_msg">RESCUE is coming...</string>
+    <string name="setpincode_menu_label">Enter Pin Code</string>
+
+    <string name="start_streaming">Start streaming</string>
+    <string name="stop_streaming">Stop streaming</string>
+    <string name="stop_playing">Stop</string>
+    <string name="start_playing">Play</string>
+    <string name="stream_id">%s</string>
+
+    <string name="google_site_verify">google-site-verification: google4b2dfb9cff96b899.html</string>
+
+    <string name="about_iw">Instant Witnesses designed to do exactly that generate Witnesses instantly to your situation. Whether you\'re the potential victim of a an aggressive attack
+        or a bully or you\'re just wanting to show off something that you can do.
+    Instant Witnesses is where a neighborhood watch , Amber Alert , Red Alert and 911 all come together.\n\n
+    Instant witness will immediately alert everyone with the app installed, within a specified radius of your location that you need assistance or that there is something going on.\n\n
+    It is designed as a single swipe from the lock screen on your phone to automatically activate the audio/video  and send a one-way broadcast and your GPS location to everyone to let
+        them know that you\'re in need of witnesses and potentially help.
+    Instant witness does not promote any physical confrontation but it does promote you to show up and be a witness.\n\n
+    If you talk to any victim of a person on person crime, while that crime is going on the thought going through their head is \'someone , anyone please ju
+        how up \' now instant
+        witness will give you the ability to alert that someone that is close by.
+    The hope with instant witness is not only to generate potential witnesses to what\'s going on but also to close the gap in response time to your location and situation.\n\n
+    Instant witness has a pin code deactivation feature similar to a home security system that prevents anyone from you from shutting it off. So if you activate it,
+        someone cannot grab your phone and just shut it off.\n\nCopyrght 2018 Buryware\n\nCreated by Jason Nelson and Steve Stansbury</string>
+    <string name="setpinnumber">Enter your New PIN</string>
+    <string name="enterpinnumber">Enter your PIN</string>
+    <string name="writedownpinnumber">Write down our new PIN</string>
+    <string name="wrongpinnumber">Wrong PIN. Keypad Locked</string>
+    <string name="correctpinnumber">Correct PIN</string>
+    <string name="HelpInProgress">A HELP is already in progress.</string>
+    <string name="RescueInProgress">A RESCUE is already in progress.</string>
+    <string name="NoStreamReply">No video streams to reply to.</string>
+    <string name="SoundButtonText">SOUND</string>
+    <string name="MsgUniqueID">38400000-8cf0-11bd-b23e-10b96e4ef00d</string>
+    <string name="TimeStampSeed">yyyy.MM.dd.HH.mm.ss</string>
+
+</resources>
